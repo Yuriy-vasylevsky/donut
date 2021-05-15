@@ -1,0 +1,43 @@
+@import "./base/_common.scss";
+@import "./utils/_variables.scss";
+@import "./components/logo";
+@import "./components/social-icon";
+@import "./components/button";
+@import "./components/button";
+@import "./layaout/_grid.scss";
+@import "./layaout/header";
+@import "./layaout/hero";
+@import "./layaout/about";
+@import "./layaout/program";
+@import "./layaout/Registration";
+@import "./layaout/footer";
+@import "./base/_container.scss";
+@import "./base/_container.scss";
+
+.page-title{
+   font-family: Caveat Brush;
+   font-size: 64px;
+   line-height: 1.02;
+
+   @media screen and (max-width:768px) {
+      font-size: 30px;
+      line-height: 1.27;
+      text-align: center;
+   }
+}
+
+.section-title {
+   font-family: Caveat Brush;
+   font-size: 36px;
+   line-height: 1.81;
+
+   @media screen and (max-width:768px) {
+      margin-bottom: 15px;
+   }
+}
+
+
+.section-text {
+   
+}
+
