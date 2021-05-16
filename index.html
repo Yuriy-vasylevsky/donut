@@ -83,7 +83,7 @@
 		<!-- About us -->
 		<section class="section__about section">
 			<div class="container">
-				<h2 class="section-title" class="section-title">About us</h2>
+				<h2 class="section-title">About us</h2>
 					<ul class="about__list list">
 						<li class="about__item">
 							<p class="section-text">
@@ -225,7 +225,7 @@
 				<ul class="reviews__list list">
 					<li class="reviews__item">
 						<div class="thumb">
-							<div class="">
+							<div class="thumb__image">
 								<picture>
 									<img srcset="./img/rev/behrouz3.jpg 1x ./img/rev/behrouz3-2x 2x.jpg" alt="">
 									<img src="./img/rev/behrouz3.jpg" alt="">
@@ -240,7 +240,7 @@
 
 					<li class="reviews__item">
 						<div class="thumb">
-							<div class="">
+							<div class="thumb__image">
 								<picture>
 									<img srcset="./img/rev/behrouz1.jpg 1x ./img/rev/behrouz1-2x 2x.jpg" alt="">
 									<img src="./img/rev/behrouz1.jpg" alt="">
@@ -255,7 +255,7 @@
 
 					<li class="reviews__item">
 						<div class="thumb">
-							<div class="">
+							<div class="thumb__image">
 								<picture>
 									<img srcset="./img/rev/behrouz2.jpg 1x ./img/rev/behrouz2-2x 2x.jpg" alt="">
 									<img src="./img/rev/behrouz2.jpg" alt="">
@@ -284,40 +284,54 @@
 		<!-- Registration -->
 		<section class="section__registration section">
 			<div class="container">
-				<div class="registration__data">
-					<p class="registration_text">
-						May 23, 11:00
-						New York
-					</p>
+				<div class="registration__div">
+					<h2 class="section-title">Registration</h2>
 
-					<p class="registration_text">$ 699</p>
-				</div>
-
-				<div class="registration_form">
-					<form class="form">
-						<p class="form__text">
-							Apply your personal info
-							for registration
+					<div class="registration__data">
+						<p class="registration_text">
+							May 23, 11:00
+							New York
 						</p>
 
-						<div class="">
-							<label for="">
-								<input type="text">
-							</label>
+						<p class="registration_text">$ 699</p>
+					</div>
 	
-							<label for="">
-								<input type="text">
-							</label>
+					<div class="registration_form">
+						<form class="form">
+							<p class="form__text">
+								Apply your personal info
+								for registration
+							</p>
 	
-							<label for="">
-								<input type="text">
-							</label>
-						</div>
+							<div class="form__input">
 
-						<button class="main__button" type="submit" >
-							Register
-						</button>
-					</form>
+								<div class="form__border">
+									<label class="lebel">
+										<input class="input" type="text">
+									</label>
+								</div>
+
+								<div class="form__border">
+									<label class="lebel" for="">
+										<input class="input" type="text">
+									</label>
+								</div>
+		
+								<div class="form__border">
+									<label class="lebel" for="">
+										<input class="input" type="text">
+									</label>
+								</div>
+							</div>
+	
+							<button class="main__button" type="submit" >
+								Register
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="form__fon">
+
 				</div>
 			</div>
 		</section>
@@ -328,14 +342,18 @@
 				<h2 class="section-title">Contact</h2>
 				<p class="form__text"> We will answer any question!</p>
 
-				<form action="">
-					<label for="">
-						<input type="text">
-					</label>
-
-					<label for="">
-						<input type="text">
-					</label>
+				<form class="contact__form" action="">
+					<div class="form__border">
+						<label class="contact__label">
+							<input class="contact__input" type="text">
+						</label>
+					</div>
+					
+					<div class="form__border">
+						<label class="contact__label">
+							<input class="contact__input" type="text">
+						</label>
+					</div>
 
 					<button class="main__button"  type="button">Send</button>
 				</form>
@@ -373,8 +391,10 @@
 	<!-- footer  -->
 	<footer class="section__footer">
 		<div class="container">
-			<a class="linck-number" href="">(910)222-8855</a>
-			<a class="linck-adres" href="">New York</a>
+			<div class="footer__flex">
+				<a class="linck-number" href="">(910)222-8855</a>
+				<a class="linck-adres" href="">New York</a>
+			</div>
 		</div>
 	</footer>
 

@@ -1,4 +1,5 @@
-.linck-number{
+.linck-number,
+.linck-adres{
 font-size: 16px;
 line-height: 1.25;
 text-align: left;
@@ -6,10 +7,10 @@ color: var(--main-text-color);
 text-decoration: none;
 }
 
-.linck-adres{
-   font-size: 16px;
-   line-height: 1.25;
-   text-align: right;
-   color: var(--main-text-color);
-   text-decoration: none;
+.footer__flex {
+   display: flex;
+   justify-content: space-between;
+   // padding-top: 19px;
+   padding-bottom: 19px;
+
 }

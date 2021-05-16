@@ -3,13 +3,15 @@
 @import "./components/logo";
 @import "./components/social-icon";
 @import "./components/button";
-@import "./components/button";
+@import "./components/form";
 @import "./layaout/_grid.scss";
 @import "./layaout/header";
 @import "./layaout/hero";
 @import "./layaout/about";
 @import "./layaout/program";
+@import "./layaout/reviews";
 @import "./layaout/Registration";
+@import "./layaout/contact";
 @import "./layaout/footer";
 @import "./base/_container.scss";
 @import "./base/_container.scss";
@@ -33,6 +35,8 @@
 
    @media screen and (max-width:768px) {
       margin-bottom: 15px;
+      text-align: center;
+      font-size: 24px;
    }
 }
 
