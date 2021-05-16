@@ -6,6 +6,7 @@ body {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+  z-index: 100;
 }
 
 img {
@@ -319,10 +320,53 @@ p {
   }
 }
 
+.hero__section::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  background-image: url(../img/bg/mob/pic1.png);
+  width: 130px;
+  height: 165px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: contain;
+}
+
+@media screen and (min-width: 380px) and (max-width: 420px) {
+  .hero__section::after {
+    width: 160px;
+    height: 195px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  .hero__section::after {
+    width: 190px;
+    height: 225px;
+  }
+}
+
+.bg img {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-size: contain;
+  width: 100%;
+  max-width: 768px;
+  z-index: -10;
+}
+
 @media screen and (max-width: 768px) {
   .section__about .about__item:not(:last-child) {
     margin-bottom: 15px;
   }
+}
+
+.about__image {
+  display: flex;
+  justify-content: center;
 }
 
 .event__title {
@@ -333,11 +377,34 @@ p {
   color: var(--black-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 380px) {
   .event__title {
     font-size: 18px;
-    padding-top: 45px;
     padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 420px) {
+  .event__title {
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 460px) {
+  .event__title {
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .event__title {
+    font-size: 22px;
+    padding-bottom: 30px;
+    padding-top: 15px;
   }
 }
 
@@ -446,7 +513,7 @@ p {
 
 .event__item:nth-child(1),
 .event__item:nth-child(2) {
-  margin-bottom: 10px;
+  margin-bottom: 57px;
 }
 
 .event__item:nth-child(1),
@@ -456,6 +523,41 @@ p {
 
 .program__events {
   margin-top: 60px;
+}
+
+.event__item::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
+}
+
+.pic1::before {
+  width: 77px;
+  height: 85px;
+  background-image: url(../img/program/mob/pic1.png);
+  margin-top: -40px;
+}
+
+.pic2::before {
+  width: 65px;
+  height: 71px;
+  background-image: url(../img/program/mob/pic2.png);
+}
+
+.pic3::before {
+  width: 70px;
+  height: 77px;
+  background-image: url(../img/program/mob/pic3.png);
+  margin-top: -35px;
+}
+
+.pic4::before {
+  width: 65px;
+  height: 72px;
+  background-image: url(../img/program/mob/pic4.png);
 }
 
 @media screen and (max-width: 768px) {

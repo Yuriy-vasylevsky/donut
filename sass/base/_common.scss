@@ -1,4 +1,5 @@
 body {
+	// position: relative;
 	color: var(--main-text-color);
 	font-family: var(--main-fonts);
 	// letter-spacing: 0.03em;
@@ -7,6 +8,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	margin: 0;
+	z-index: 100;
 	
 }
 
