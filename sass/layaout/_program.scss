@@ -67,8 +67,23 @@
    // font-style: italic;
    font-weight: 500;
    font-size: 16px;
-   line-height: 4.06;
+   line-height: 1.06;
    text-align: center;
+   margin-bottom: 15px;
+
+
+}
+
+.reviews__text::before {
+   content: "";
+	display: block;
+	width: 136px;
+	height: 24px;
+   background-image: url(../img/svg/rate.svg);
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 .reviews__text-section {

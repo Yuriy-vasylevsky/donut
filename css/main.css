@@ -150,6 +150,14 @@ p {
   text-align: center;
 }
 
+.section__registration .form__text::before {
+  content: "";
+  display: block;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .form {
   padding: 12px;
 }
@@ -158,6 +166,12 @@ p {
   width: 100%;
   border: none;
   height: 22px;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(171, 129, 108, 0.5);
 }
 
 .form__border {
@@ -447,8 +461,21 @@ p {
 .reviews__text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 4.06;
+  line-height: 1.06;
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.reviews__text::before {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 24px;
+  background-image: url(../img/svg/rate.svg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .reviews__text-section {
@@ -560,6 +587,10 @@ p {
   background-image: url(../img/program/mob/pic4.png);
 }
 
+.section__reviews {
+  position: relative;
+}
+
 @media screen and (max-width: 768px) {
   .reviews__item:nth-child(odd) {
     display: none;
@@ -598,6 +629,43 @@ p {
 
 .reviews__text-subtitle {
   margin-top: 30px;
+}
+
+.reviews__div-subtitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__text-subtitle::before {
+  position: absolute;
+  top: 38px;
+  left: 36%;
+  content: "";
+  display: block;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+  width: 35px;
+}
+
+.reviews__text-subtitle::after {
+  position: absolute;
+  top: 38px;
+  left: 56%;
+  content: "";
+  display: block;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+  width: 35px;
+}
+
+.bg2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  width: 100%;
+  max-width: 768px;
+  z-index: -10;
+  overflow: hidden;
 }
 
 .section__registration {
@@ -647,6 +715,13 @@ p {
   width: 100%;
   border: none;
   height: 22px;
+  background-color: transparent;
+}
+
+.contact__input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(171, 129, 108, 0.5);
 }
 
 .section__contact .main__button {
