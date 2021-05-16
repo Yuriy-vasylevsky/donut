@@ -31,6 +31,13 @@
 }
 
 .button-menu {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+
+.button-menu.is-open  {
    position: fixed;
    top: 5px;
    right: 15px;

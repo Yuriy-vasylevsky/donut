@@ -207,6 +207,12 @@ p {
 }
 
 .button-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.button-menu.is-open {
   position: fixed;
   top: 5px;
   right: 15px;
@@ -563,72 +569,6 @@ p {
   padding-bottom: 19px;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 853px) {
-  .container {
-    width: 769px;
-    padding-left: 58px;
-    padding-right: 58px;
-  }
-}
-
-@media screen and (min-width: 854px) {
-  .container {
-    width: 854px;
-  }
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 853px) {
-  .container {
-    width: 769px;
-    padding-left: 58px;
-    padding-right: 58px;
-  }
-}
-
-@media screen and (min-width: 854px) {
-  .container {
-    width: 854px;
-  }
-}
-
 .page-title {
   font-family: Caveat Brush;
   font-size: 64px;
@@ -654,6 +594,72 @@ p {
     margin-bottom: 15px;
     text-align: center;
     font-size: 24px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 853px) {
+  .container {
+    width: 769px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+}
+
+@media screen and (min-width: 854px) {
+  .container {
+    width: 854px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 853px) {
+  .container {
+    width: 769px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+}
+
+@media screen and (min-width: 854px) {
+  .container {
+    width: 854px;
   }
 }
 /*# sourceMappingURL=main.css.map */
