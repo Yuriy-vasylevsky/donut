@@ -26,15 +26,28 @@
 					<use href="./img/svg/sprite.svg#icon-logo"></use>
 				</svg>
 			</div>
+			
+			<div class="mobile-menu " data-menu>
+				<svg class="menu-icon">
+					<use href="./img/svg/sprite.svg#icon-logo"></use>
+				</svg>
 
-			<nav  class="header__navigation">
-				<ul class="header__list list ">
-					<li class="header__item"><a href="" class="header__linck linck">About</a></li>
-					<li class="header__item"><a href="" class="header__linck linck">Program</a></li>
-					<li class="header__item"><a href="" class="header__linck linck">Reviews</a></li>
-					<li class="header__item"><a href="" class="header__linck linck">Contacts</a></li>
-				</ul>
-			</nav>
+				<nav  class="header__navigation">
+					<ul class="header__list list ">
+						<li class="header__item"><a href="" class="header__linck linck">About</a></li>
+						<li class="header__item"><a href="" class="header__linck linck">Program</a></li>
+						<li class="header__item"><a href="" class="header__linck linck">Reviews</a></li>
+						<li class="header__item"><a href="" class="header__linck linck">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+			<button class="button-menu " tepe="button" aria-expanded="false" data-menu-button > 
+				<svg class="icon-menu"
+				aria-label="кнопка открития меню">
+					<use class="icon-open-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+					<use class="icon-close-menu" href="./img/svg/sprite.svg#icon-close-menu"></use>
+				</svg>
+			</button>
 		</div>
 	</header>
 
@@ -398,5 +411,7 @@
 		</div>
 	</footer>
 
+   <script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
