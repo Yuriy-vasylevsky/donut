@@ -3,7 +3,7 @@
    width: 158px;
    height: 71px;
 
-   @media screen and (max-width:768px) {
+   @media screen and (max-width:853px) {
       width: 96px;
       height: 43px;
    }
@@ -16,5 +16,11 @@
       padding-top: 7px;
       padding-bottom: 7px;
    }
+
+   @media screen and (max-width:853px) {
+      padding-top: 25px;
+      padding-bottom: 10px;
+   }
+
 }
 

@@ -4,15 +4,17 @@
 }
 
 .button-menu {
+   position: absolute;
+   top: 0;
+   right: 0;
    display: inline-flex;
    margin: 0;
    padding: 0;
    border: none;
    background-color: transparent ;
    z-index: 110;
-   // fill: #2196F3;
 
-   @media screen and (min-width:768px) {
+   @media screen and (min-width:853px) {
       display: none;
    }
 }
@@ -20,7 +22,6 @@
 .button-menu .icon-close-menu {
    display: none;
 }
-
 
 .button-menu.is-open .icon-close-menu {
    display: block;
@@ -30,29 +31,10 @@
    display: none;
 }
 
-.button-menu {
-   position: absolute;
-   top: 0;
-   right: 0;
-}
-
-
 .button-menu.is-open  {
    position: fixed;
    top: 5px;
    right: 15px;
-}
-
-
-.mobile-container {
-   position: relative;
-   height: 100%;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   padding: 48px 40px;
-   
 }
 
 .mobile-menu {
@@ -73,7 +55,7 @@
 }
 
 
-.menu-icon {
+.mobile__logo {
    width: 190px;
    height: 85px;
    margin-right: auto;

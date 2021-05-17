@@ -1,23 +1,28 @@
 .page-title{
    font-family: Caveat Brush;
-   font-size: 64px;
-   line-height: 1.02;
+   font-size: 30px;
+   line-height: 1.27;
+   text-align: center;
 
-   @media screen and (max-width:768px) {
-      font-size: 30px;
-      line-height: 1.27;
-      text-align: center;
+   @media screen and (min-width:768px) {
+      text-align: left;
+   }
+
+   @media screen and (min-width:854px) {
+      font-size: 64px;
+      line-height: 1.02;
+      
    }
 }
 
 .section-title {
    font-family: Caveat Brush;
-   font-size: 36px;
+   font-size: 24px;
    line-height: 1.81;
+   text-align: center;
 
-   @media screen and (max-width:768px) {
+   @media screen and (max-width:853px) and (min-width:768px) {
       margin-bottom: 15px;
-      text-align: center;
-      font-size: 24px;
+      text-align: left;
    }
 }

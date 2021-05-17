@@ -3,6 +3,10 @@
    font-size: 18px;
    line-height: 1.22;
    color: var(--main-text-color);
+
+   @media screen and (max-width:768px) {
+      font-size: 24px;
+   }
 }
 
 .header__navigation{
@@ -21,9 +25,4 @@
    }
 }
 
-.header__linck {
-   @media screen and (max-width:768px) {
-      font-size: 24px;
-   }
-}
 

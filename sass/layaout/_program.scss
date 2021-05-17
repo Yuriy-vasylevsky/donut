@@ -1,3 +1,5 @@
+
+
 .event__title {
    font-family: Caveat Brush;
    font-size: 24px;
@@ -5,18 +7,18 @@
    text-align: center;
    color: var(--black-color);
 
-   @media screen and (max-width:380px) {
+   @media screen and (max-width:379px) {
       font-size: 18px;
       padding-bottom: 12px
    }
 
-   @media screen and (min-width:380px) and (max-width:420px) {
+   @media screen and (min-width:380px) and (max-width:419px) {
       font-size: 18px;
       padding-bottom: 25px;
       padding-top: 5px;
    }
 
-   @media screen and (min-width:420px) and (max-width:460px) {
+   @media screen and (min-width:420px) and (max-width:459px) {
       font-size: 20px;
       padding-bottom: 25px;
       padding-top: 10px;
@@ -27,6 +29,12 @@
       padding-bottom: 30px;
       padding-top: 15px;
    }
+
+   @media screen and (min-width:769px) and (max-width:853px) {
+      font-size: 18px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+   }
 }
 
 .event__text{
@@ -36,6 +44,11 @@
 
    @media screen and (max-width:768px) {
       padding-bottom: 12px;
+   }
+
+   @media screen and (min-width:769px) and (max-width:853px) {
+      font-size: 14px;
+      padding-bottom: 10px;
    }
 }
 
@@ -64,14 +77,12 @@
 }
 
 .reviews__text {
-   // font-style: italic;
+   font-style: italic;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.06;
    text-align: center;
    margin-bottom: 15px;
-
-
 }
 
 .reviews__text::before {
@@ -98,9 +109,10 @@
 }
 
 .program_item:not(:last-child) {
+   margin-bottom: 15px;
 
    @media screen and (max-width:768px) {
-      margin-bottom: 15px;
+      
    }
 }
 
@@ -151,6 +163,7 @@
 
 .program__events {
    margin-top: 60px;
+   flex-basis: calc((100% - 35px) / 2);
 }
 
 .event__item::before {
@@ -186,4 +199,9 @@
    width: 65px;
    height: 72px;
    background-image: url(../img/program/mob/pic4.png);
+}
+
+.program__description {
+   padding-bottom: 30px;
+   flex-basis: calc((100% - 35px) / 2);
 }

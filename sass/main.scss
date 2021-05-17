@@ -1,10 +1,11 @@
-@import "./base/_common.scss";
 @import "./utils/_variables.scss";
+@import "./base/_common.scss";
 @import "./components/logo";
 @import "./components/social-icon";
 @import "./components/button";
 @import "./components/form";
 @import "./components/nobile-menu";
+@import "./components/form-contact";
 @import "./layaout/_grid.scss";
 @import "./layaout/header";
 @import "./layaout/hero";

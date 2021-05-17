@@ -11,14 +11,23 @@
       margin-top: 3px;
       margin-bottom: 25px;
    }
+
+   @media screen and (max-width:853px) {
+      
+      margin-bottom: 35px;
+   }
+
+
 }
 
 .hero__section .main__button {
+
    @media screen and (max-width:768px) {
       margin-right: auto;
       margin-left: auto;
    }  
 }
+
 
 .hero__section::after {
    position: absolute;
@@ -43,6 +52,15 @@
       height: 225px;
    } 
 
+   @media screen and (min-width:769px) and (max-width:854px) {
+      background-image: url(../img/bg/tab/pic.png);
+      width: 378px;
+      height: 396px;
+      // background-size: 378px 396px;
+      // left: 270px;
+      left: 60%;
+      transform: translateX(-50%);
+   } 
 }
 
 .bg img {
@@ -54,5 +72,16 @@
    height: 511px;
    max-width: 768px;
    z-index: -10;
+
+   @media screen and (min-width:769px) and (max-width:853px) {
+      max-width: 853px;
+      height: 657px;
+   } 
+
+   @media screen and (min-width:854px) {
+      height: 1035px;
+      max-width: 1280px;
+   } 
 }
+
 
