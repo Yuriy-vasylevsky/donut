@@ -23,6 +23,23 @@
 
    @media screen and (max-width:853px) and (min-width:768px) {
       margin-bottom: 15px;
+
+   }
+}
+
+.section__about .section-title, 
+.section__program .section-title {
+   @media screen and (max-width:853px) and (min-width:768px) {
       text-align: left;
+   }
+}
+
+.section__registration .section-title {
+   @media screen and (max-width:768px)  {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
    }
 }

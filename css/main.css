@@ -8,7 +8,7 @@
   --maim-bg-color: #E5E5E5;
   --accente-bg-color: #FEF3E4;
   --grid-item:1;
-  --grid-margin: 30px;
+  --grid-margin: 38px;
   --transform-time: 250ms;
 }
 
@@ -164,6 +164,13 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 769px) {
+  .form__text {
+    text-align: left;
+    max-width: 195px;
+  }
+}
+
 .section__registration .form__text::before {
   content: "";
   display: block;
@@ -172,8 +179,25 @@ p {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 769px) {
+  .section__registration .form__text::before {
+    position: absolute;
+    top: 80px;
+    right: 350px;
+    transform: rotate(90deg);
+    width: 190px;
+    margin-bottom: 0;
+  }
+}
+
 .form {
   padding: 12px;
+}
+
+@media screen and (min-width: 769px) {
+  .form {
+    padding: 0;
+  }
 }
 
 .input {
@@ -191,10 +215,6 @@ p {
 .form__border {
   border-bottom: 1px solid #AB816C;
   margin-top: 15px;
-}
-
-.form__input {
-  margin-bottom: 30px;
 }
 
 .icon-menu {
@@ -268,6 +288,18 @@ p {
   padding: 12px;
 }
 
+@media screen and (min-width: 769px) {
+  .contact__form {
+    max-width: 410px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.form__contact-text {
+  text-align: center;
+}
+
 .contact__input {
   width: 100%;
   border: none;
@@ -308,7 +340,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 853px) {
   .header__navigation {
     position: absolute;
     top: 150px;
@@ -317,7 +349,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 853px) {
   .header__item {
     padding-bottom: 45px;
   }
@@ -549,38 +581,6 @@ p {
   height: 21px;
 }
 
-.reviews__text {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.06;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.reviews__text::before {
-  content: "";
-  display: block;
-  width: 136px;
-  height: 24px;
-  background-image: url(../img/svg/rate.svg);
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.reviews__text-section {
-  text-align: center;
-}
-
-.reviews__text-subtitle {
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: var(--main-accente-color);
-}
-
 .program_item:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -685,6 +685,11 @@ p {
 
 .section__reviews {
   position: relative;
+  --grid-item:3;
+}
+
+.reviews__list {
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -693,14 +698,20 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .thumb {
-    margin-right: auto;
-    margin-left: auto;
-  }
+.reviews__item:nth-child(odd) .thumb__image {
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.thumb__image {
+.reviews__item:nth-child(even) .thumb__image {
+  display: flex;
+  justify-content: center;
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -710,17 +721,62 @@ p {
 }
 
 @media screen and (min-width: 380px) {
-  .thumb__image {
+  .reviews__item:nth-child(even) .thumb__image {
     width: 170px;
     height: 170px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .thumb__image {
+  .reviews__item:nth-child(even) .thumb__image {
     width: 220px;
     height: 220px;
   }
+}
+
+@media screen and (min-width: 480px) {
+  .reviews__item:nth-child(even) .thumb__image {
+    width: 186px;
+    height: 186px;
+    transform: translateY(20px);
+  }
+}
+
+.reviews__text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.06;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.reviews__text:before {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 24px;
+  background-image: url(../img/svg/rate.svg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviews__item:nth-child(2) .reviews__text:before {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.reviews__text-section {
+  text-align: center;
+}
+
+.reviews__text-subtitle {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main-accente-color);
 }
 
 .reviews__text-subtitle {
@@ -758,14 +814,40 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 1249px;
+  height: 1400px;
   max-width: 768px;
   z-index: -10;
+}
+
+@media screen and (min-width: 769px) and (max-width: 853px) {
+  .bg2 img {
+    max-width: 853px;
+    height: 1260px;
+  }
+}
+
+@media screen and (min-width: 854px) {
+  .bg2 img {
+    max-width: 1280px;
+    height: 1600px;
+  }
 }
 
 .section__registration {
   position: relative;
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .section__registration .main__button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .section__registration .main__button {
+    margin-top: 20px;
+  }
 }
 
 .section__registration .main__button {
@@ -779,6 +861,7 @@ p {
   font-size: 20px;
   line-height: 1.2;
   text-align: right;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -789,16 +872,25 @@ p {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    margin-bottom: 25px;
   }
 }
 
+.registration__data {
+  flex-basis: calc(30% - 30px);
+}
+
+.registration_form {
+  position: relative;
+  flex-basis: calc(70% - 30px);
+}
+
 .registration__div {
+  position: relative;
   height: 510px;
   background: #FFFFF9;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 250px 250px 0px 0px;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 
 @media screen and (max-width: 480px) {
@@ -807,11 +899,29 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .registration__div {
+    border-radius: 150px 150px 150px 150px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+}
+
 .section__contact .main__button {
   margin-left: auto;
   margin-right: auto;
   border: none;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 853px) {
+  .section__contact .sicial__list {
+    justify-content: center;
+    margin-top: 35px;
+  }
 }
 
 .linck-number,
@@ -859,7 +969,23 @@ p {
 @media screen and (max-width: 853px) and (min-width: 768px) {
   .section-title {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 853px) and (min-width: 768px) {
+  .section__about .section-title,
+  .section__program .section-title {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__registration .section-title {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
   }
 }
 

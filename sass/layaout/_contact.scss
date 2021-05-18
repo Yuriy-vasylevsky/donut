@@ -7,4 +7,13 @@
       border: none;
       margin-top: 30px;
    }
+
+   .sicial__list {
+
+      @media screen and (min-width:769px) and (max-width:853px) {
+         justify-content: center;
+         margin-top: 35px;
+      }
+      
+   }
 }

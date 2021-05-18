@@ -1,5 +1,20 @@
 .contact__form {
    padding: 12px;
+
+   @media screen and (min-width:769px) {
+      max-width: 410px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   
+}
+
+.form__contact-text{
+   text-align: center;
+   
+   @media screen and (min-width:769px) {
+      // max-width: 195px;
+   }
 }
 
 .contact__label {

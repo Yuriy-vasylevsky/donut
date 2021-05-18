@@ -261,12 +261,19 @@
 		<section class="section__reviews section">
 			<div class="container">
 				<div class="bg2">
-					<img src="./img/bg/mob/bg2.png" alt="">
+
+					<picture >
+						<source srcset="./img/bg/desk/bg2.png 1x, ./img/bg/desk/bg2@.png 2x"   media="(min-width: 854px)" type="image/png">
+						<source srcset="./img/bg/tab/bg2.png 1x, ./img/bg/tab/bg2@.png 2x"   media="(min-width: 769px)" type="image/png">
+						<source srcset="./img/bg/mob/bg2.png 1x, ./img/bg/mob/bg2@.png 2x"   media="(max-width: 768px)" type="image/png">
+						
+						<img src="./img/bg/mob/bg2.png" alt="">
+					</picture>
 				</div>
 				<h2 class="section-title">Reviews</h2>
 
-				<ul class="reviews__list list">
-					<li class="reviews__item">
+				<ul class="reviews__list list grid">
+					<li class="reviews__item grid-item">
 						<div class="thumb">
 							<div class="thumb__image">
 								<picture>
@@ -281,7 +288,7 @@
 						</div>
 					</li>
 
-					<li class="reviews__item">
+					<li class="reviews__item grid-item">
 						<div class="thumb">
 							<div class="thumb__image">
 								<picture>
@@ -296,7 +303,7 @@
 						</div>
 					</li>
 
-					<li class="reviews__item">
+					<li class="reviews__item grid-item">
 						<div class="thumb">
 							<div class="thumb__image">
 								<picture>
@@ -313,10 +320,12 @@
 				</ul>
 
 				<p class="reviews__text-section">
-					Last time I have visited a cooking course by Eva 
-					I was impressed with the way she explained everything
-					to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
-					Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!
+					Last time I have visited a cooking course by Eva <br>
+					I was impressed with the way she explained everythingto <br>
+			      people. You  can be sure you will manage to cook a delicious dish even <br>
+					if it is your first time in the kitchen!<br>
+					Thank you so much for the masterclass!<br> 
+					Looking forward to the next one and highly recommend it to everyone!
 				</p>
 
 				<div class="reviews__div-subtitle">
@@ -330,9 +339,9 @@
 		<!-- Registration -->
 		<section class="section__registration section">
 			<div class="container">
-				<div class="registration__div">
-					<h2 class="section-title">Registration</h2>
+				<h2 class="section-title">Registration</h2>
 
+				<div class="registration__div">
 					<div class="registration__data">
 						<p class="registration_text">
 							May 23, 11:00
@@ -343,41 +352,42 @@
 					</div>
 	
 					<div class="registration_form">
+
 						<form class="form">
 							<p class="form__text">
 								Apply your personal info
 								for registration
 							</p>
 	
-							<div class="form__input">
+							<div class="flex">
+								<div class="form__input">
 
-								<div class="form__border">
-									<label class="lebel">
-										<input class="input" type="text" placeholder="Your name">
-									</label>
-								</div>
-
-								<div class="form__border">
-									<label class="lebel" for="">
-										<input class="input" type="text" placeholder="Phone number">
-									</label>
+									<div class="form__border">
+										<label class="lebel">
+											<input class="input" type="text" placeholder="Your name">
+										</label>
+									</div>
+	
+									<div class="form__border">
+										<label class="lebel" for="">
+											<input class="input" type="text" placeholder="Phone number">
+										</label>
+									</div>
+			
+									<div class="form__border">
+										<label class="lebel" for="" >
+											<input class="input" type="text" placeholder="Email">
+										</label>
+									</div>
 								</div>
 		
-								<div class="form__border">
-									<label class="lebel" for="" >
-										<input class="input" type="text" placeholder="Email">
-									</label>
-								</div>
+								<button class="main__button" type="submit" >
+									Register
+								</button>
+								
 							</div>
-	
-							<button class="main__button" type="submit" >
-								Register
-							</button>
 						</form>
 					</div>
-				</div>
-				<div class="form__fon">
-
 				</div>
 			</div>
 		</section>
@@ -386,7 +396,7 @@
 		<section class="section__contact section">
 			<div class="container">
 				<h2 class="section-title">Contact</h2>
-				<p class="form__text"> We will answer any question!</p>
+				<p class="form__contact-text"> We will answer any question!</p>
 
 				<form class="contact__form" action="">
 					<div class="form__border">
